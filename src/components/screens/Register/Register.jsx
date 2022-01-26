@@ -38,7 +38,7 @@ const Register = () => {
                     </div>
                     
                     <MyButton title={'Registrarme'}/>
-                    <p>Ya tienes una cuenta? <Link to={'/login'}>Ingresar</Link> </p>
+                    <p>Ya tienes una cuenta? <Link to={'/login'} className="link">Ingresar</Link> </p>
                 </form>
             </div>
         </div>

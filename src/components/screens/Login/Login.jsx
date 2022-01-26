@@ -28,7 +28,7 @@ const Login = () => {
             </div>
             
             <MyButton title={'Continuar'}/>
-            <p>Todavia no tienes una cuenta? <Link to={'/register'}>Registrate</Link> </p> 
+            <p>Todavia no tienes una cuenta? <Link to={'/register'} className="link">Registrate</Link> </p> 
         </form> 
     </div>
 </div>  

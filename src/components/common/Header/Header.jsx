@@ -1,20 +1,21 @@
 import React from "react";
 import './Header.css'
 import Banco from './banco.png'
+import {Link} from 'react-router-dom';
 
 const Header = () => {
     return(
         <div className="header">
-            <nav className="nav-bar">
+            <nav>
                 <div className="container-logo">
                     <ul id="logo">
-                        <li><a href="#"><img src={Banco} width={150} height={60}/></a></li>
+                        <li><Link to={"/home"}><img src={Banco} alt=""/></Link></li>
                     </ul>
                 </div>
                 <div className="container">
                     <ul>
-                        <li>Login</li>
-                        <li>Register</li>
+                        <Link to={"/login"} className="log"><li>Login</li></Link>
+                        <Link to={"/register"} className="log"><li>Register</li></Link>
                         <li>Profile</li>
                     </ul>
                 </div>
